@@ -1,10 +1,10 @@
-//import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-//import { AppModule } from './app.module';
-//const platform = platformBrowserDynamic();
-////noinspection TypeScriptValidateTypes
-//platform.bootstrapModule(AppModule);
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+const platform = platformBrowserDynamic();
+//noinspection TypeScriptValidateTypes
+platform.bootstrapModule(AppModule);
 
-import { platformBrowser }    from '@angular/platform-browser';
-import { AppModuleNgFactory } from '../aot/app/app.module.ngfactory';
-platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
+//import { platformBrowser }    from '@angular/platform-browser';
+//import { AppModuleNgFactory } from '../aot/app/app.module.ngfactory';
+//platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
 

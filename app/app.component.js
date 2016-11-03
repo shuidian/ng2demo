@@ -12,10 +12,23 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.ngOnInit = function () {
+        var menu = document.getElementsByClassName("menu")[0];
+        var menu_list = document.getElementsByClassName("menu-list")[0];
+        menu.onclick = function () {
+            if (menu_list.className.indexOf("active") == -1) {
+                menu_list.className += ' active';
+            }
+            else {
+                menu_list.className = 'menu-list';
+            }
+        };
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular App</h1>'
+            templateUrl: 'app/app.component.html',
+            styleUrls: ['app/app.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
